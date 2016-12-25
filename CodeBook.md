@@ -40,43 +40,43 @@ REMAINING VARIABLES
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 
 The set of variables that were estimated and averaged from these signals are: 
-mean - mean value
-std - standard deviation
+* mean - mean value
+* std - standard deviation
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+* gravityMean
+* tBodyAccMean
+* tBodyAccJerkMean
+* tBodyGyroMean
+* tBodyGyroJerkMean
 
 ## Data Transformations Applied
 
 Data transformations were applied to end up with the averages grouped by subject and activity. The R code to perform this is contained within the file 'assignment_cleanse.R'. The broad steps that were performed includes:
-        1. Merge the training data, training activity data, and training subject data into the one large training data set
-        2. Merge the test data, test activity data, and the test subject data into the one large test data set
-        3. Combine the training data and test data together
-        4. Select only the mean and standard deviation columns (in addition to activity and subject columns)
-        5. Group the combined data set by subject and activity and obtain averages for all mean/standard deviation variables
+1. Merge the training data, training activity data, and training subject data into the one large training data set
+2. Merge the test data, test activity data, and the test subject data into the one large test data set
+3. Combine the training data and test data together
+4. Select only the mean and standard deviation columns (in addition to activity and subject columns)
+5. Group the combined data set by subject and activity and obtain averages for all mean/standard deviation variables
 
 
