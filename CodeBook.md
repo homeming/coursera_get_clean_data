@@ -26,16 +26,16 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 SUBJECTID
 
-        Subject Identifier. There are 30 different subjects that volunteered for the experiment.
+        Subject Identifier. There are 30 different subjects that volunteered for the experiment. Numeric.
         
 ACTIVITYNAME
         
-        Activity name. The type of activity that was being performed by the subject when feature datapoints were collected by the smartphone.
+        Activity name. The type of activity that was being performed by the subject when feature datapoints were collected by the smartphone. Text.
 
 
 REMAINING VARIABLES
 
-        The remaining variables are averages of specific feature datapoints. 
+        The remaining variables are averages of specific feature datapoints. Numeric.
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.

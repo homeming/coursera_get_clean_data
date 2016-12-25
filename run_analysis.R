@@ -7,6 +7,7 @@
 # Note to Peer Reviewer
 # If you wish to read the resultant tidy_summary.csv file you can use the following R command
 # data <- read.csv("tidy_summary.csv")   # assuming your current working directory is set correctly
+# ## or data <- read.table("tidy_summary.txt", quote="\"", comment.char="",sep = " ", header = TRUE)
 
 
 # Assumptions:
