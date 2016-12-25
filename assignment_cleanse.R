@@ -6,7 +6,7 @@
 
 # Note to Peer Reviewer
 # If you wish to read the resultant tidy_summary.csv file you can use the following R command
-# data <- read.csv("tidy_summary.csv)   # assuming your current working directory is set correctly
+# data <- read.csv("tidy_summary.csv")   # assuming your current working directory is set correctly
 
 
 # Assumptions:
@@ -18,7 +18,7 @@
 #
 # Required Function Definition
 # appendAverageToColumnHeading
-# Appends the word "average" to a string. Will also capitalise the first letter and strip parentheses and hyphens
+# Appends the word "average" to a string. Will also capitalise the first letter and strip parentheses, hyphens and periods
 #
 # Example: appendAverageToColumnHeading("test-Heading()") will return "averageTestHeading" 
 #
@@ -28,8 +28,9 @@ appendAverageToColumnHeading <- function(heading){
         new_heading <- sub(first, toupper(first), heading)
         
         # Strip parentheses and hyphens
-        new_heading <- gsub("\\(\\)", "", new_heading)
-        new_heading <- gsub("-", "", new_heading) 
+        new_heading <- gsub("\\(\\)", "", new_heading)  # strip parentheses
+        new_heading <- gsub("-", "", new_heading)       # strip hypens
+        new_heading <- gsub("\\.", "", new_heading)       # strip periods
         
         # Add "Average" to the front of the column name
         new_heading <- paste("Average",new_heading, sep = "")
@@ -109,11 +110,7 @@ for(i in seq_along(headings)){  #append the word Average to all measurements
                 headings[i] = appendAverageToColumnHeading(headings[i]) # Prepend Average as averages are provided
         }
 }
-
-headings <- gsub("\\(\\)", "", headings)        # replace parentheses
-headings <- gsub("-", "", headings)             # replace dashes
 names(tidy_summary) <- headings                 # replace data frame headings with updated headings
-
 #View(tidy_summary)     # visualise data
 
 #
@@ -129,7 +126,3 @@ write.csv(x = tidy_summary, file = "tidy_summary.csv", quote = TRUE, row.names =
 #       2. Each observation forms a row -> check
 #       3. Each observational unit forms a table -> check
 #
-
-
-# TODO: Build a code book
-# TODO: Load everything onto github
