@@ -72,7 +72,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 
 ## Data Transformations Applied
 
-Data transformations were applied to end up with the averages grouped by subject and activity. The R code to perform this is contained within the file 'assignment_cleanse.R'. The broad steps that were performed includes:
+Data transformations were applied to end up with the averages grouped by subject and activity. The R code to perform this is contained within the file 'run_analysis.R'. The broad steps that were performed includes:
 
 1. Merge the training data, training activity data, and training subject data into the one large training data set
 2. Merge the test data, test activity data, and the test subject data into the one large test data set

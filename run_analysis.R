@@ -116,7 +116,8 @@ names(tidy_summary) <- headings                 # replace data frame headings wi
 #
 # Write summary output to a file (.csv)
 #
-write.csv(x = tidy_summary, file = "tidy_summary.csv", quote = TRUE, row.names = FALSE)    # output data
+write.csv(x = tidy_summary, file = "tidy_summary.csv", quote = TRUE, row.names = FALSE) # output data
+write.table(x = tidy_summary, file = "tidy_summary.txt", quote = TRUE, row.names = FALSE)       # output data
 
 ############# End Data Cleansing ###################
 

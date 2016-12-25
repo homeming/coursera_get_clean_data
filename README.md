@@ -13,5 +13,5 @@ The dataset includes the following files:
 
 - CodeBook.md : Shows information about the variables used on the feature vector and the data transformations applied.
 - README.md
-- assignment_cleanse.R : The R code that transforms the raw data into a tidy summary dataset
+- run_analysis.R : The R code that transforms the raw data into a tidy summary dataset
 - tidy_summary.csv : The tidy summary dataset, the averages of all mean and standard deviation measurements
