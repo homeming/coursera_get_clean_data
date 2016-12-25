@@ -11,7 +11,7 @@ The goal of this assignment is to prepare tidy data that can be used for later a
 The dataset includes the following files:
 =========================================
 
+- CodeBook.md : Shows information about the variables used on the feature vector and the data transformations applied.
 - README.md
 - assignment_cleanse.R : The R code that transforms the raw data into a tidy summary dataset
-- CodeBook.md : Shows information about the variables used on the feature vector and the data transformations applied.
 - tidy_summary.csv : The tidy summary dataset, the averages of all mean and standard deviation measurements
